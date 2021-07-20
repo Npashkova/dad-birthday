@@ -80,6 +80,12 @@
               background-color: #ffff66;
             font-family: 'Balsamiq Sans', cursive;
          }
+         footer a{
+             color: dimgray;
+         }
+         footer a:hover{
+             color: green;
+         }
     </style>
 </head>
 <body>
@@ -100,7 +106,7 @@
         </div>
     </div>
     <div class="navbar navigation shadow-sm navbar-dark">
-        <div class="container d-flex justify-content-between congratulate">
+        <div class="container d-flex justify-content-between congratulate" id="wishes">
             <a href="{% url 'wish' %}" class="navbar-brand d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift"
                      viewBox="0 0 16 16">
@@ -156,9 +162,9 @@
 <footer class="container-fluid">
     <div class="row text-center py-3">
         <div class="col">
-            <h3>А теперь отправляйся смотреть поздравления по ссылке выше! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-up-fill" viewBox="0 0 16 16">
+            <h3>А теперь отправляйся смотреть поздравления по ссылке выше! <a href="#wishes"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-up-fill" viewBox="0 0 16 16">
   <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7.5 6.707 6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707z"/>
-</svg></h3>
+</svg></a></h3>
         </div>
     </div>
 </footer>

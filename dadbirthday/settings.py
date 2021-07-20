@@ -81,7 +81,8 @@ DATABASES = {
         'NAME': 'dadbirthday_db',
         'USER': 'postgres',
         'PASSWORD': '161199N',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
